@@ -10,7 +10,7 @@ output=open('output.txt','a')
 for item in mds:      //对上述建立的列表中的元素进行遍历
     ip=choice(iplist)                 //从ip代理中选择一个ip
     timestamp = "%d" % time.time()
-    gjc = urllib.quote(item)
+    gjc = urllib.quote(item)         //将上述列表中的关键词变成相应的url
     #print timestamp  
     url = "http://suggestion.baidu.com/su?wd="+gjc+"&p=3&cb=window.bdsug.sug&sid=&t=" + timestamp
     #print url
